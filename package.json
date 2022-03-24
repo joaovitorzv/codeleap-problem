@@ -38,8 +38,7 @@
     "pipeline": {
       "build": {
         "outputs": [
-          "dist/**",
-          "public/dist/**"
+          "dist/**"
         ],
         "dependsOn": ["^build"]
       },
