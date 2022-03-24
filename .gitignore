@@ -100,3 +100,6 @@ buck-out/
 
 # CocoaPods
 /ios/Pods/
+
+# Parcel
+.parcel-cache
