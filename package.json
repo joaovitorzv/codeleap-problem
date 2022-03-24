@@ -5,8 +5,7 @@
   "workspaces": {
     "packages": [
       "packages/*",
-      "apps/*",
-      "wrappers/*"
+      "apps/*"
     ],
     "nohoist": [
       "**/react-native",
@@ -17,12 +16,6 @@
       "**/react-native-*/**",
       "**/*react-navigation/native*",
       "**/*react-navigation/native*/**",
-      "**/expo",
-      "**/expo/**",
-      "**/@expo",
-      "**/@expo/**",
-      "**/expo-*",
-      "**/expo-*/**",
       "**/metro-*",
       "**/metro-*/**"
     ]
@@ -46,7 +39,6 @@
       "build": {
         "outputs": [
           "dist/**",
-          ".next/**",
           "public/dist/**"
         ],
         "dependsOn": ["^build"]
