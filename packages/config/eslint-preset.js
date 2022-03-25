@@ -1,10 +1,9 @@
 module.exports = {
-  extends: ["next", "prettier"],
+  extends: ["react-app", "react-app/jest", "prettier"],
   settings: {
     next: {
       rootDir: [
         "apps/web/",
-        "apps/rweb/",
         "apps/rnative/",
         "packages/ui/",
         "packages/config/",

@@ -5,5 +5,5 @@ interface Props {
 }
 
 export const Button = ({ onClick }: Props) => {
-  return <button onClick={onClick}>Boop</button>;
+  return <button onClick={onClick}>Booba</button>;
 };

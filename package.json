@@ -22,7 +22,7 @@
   },
   "scripts": {
     "build": "turbo run build",
-    "dev": "turbo run dev --no-cache --parallel --continue",
+    "dev:web": "turbo run dev --no-cache --parallel --scope='web' --scope='ui'",
     "lint": "turbo run lint",
     "test": "turbo run test",
     "clean": "yarn clean:turbo && yarn clean:watchman",
@@ -37,16 +37,18 @@
     "baseBranch": "origin/master",
     "pipeline": {
       "build": {
-        "outputs": [
-          "dist/**"
-        ],
-        "dependsOn": ["^build"]
+        "dependsOn": ["^build"],
+        "outputs": []
       },
       "test": {
         "dependsOn": ["^build"],
         "outputs": [
           "coverage/**"
         ]
+      },
+      "deploy": {
+        "dependsOn": ["build"],
+        "outputs": [""]
       },
       "lint": {
         "outputs": []
