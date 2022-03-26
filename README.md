@@ -2,7 +2,7 @@
 
 - Includes a React and React Native Project
   - apps
-    - rweb: Basic React App wit parcel bundler
+    - rweb: Basic React App
     - rnative: React Native
   - packages
     - core:
